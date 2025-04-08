@@ -1,0 +1,233 @@
+.footer-container {
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.clickable {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.clickable:hover {
+    color: #ff3b4a;
+}
+
+/* Main Footer */
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 10%;
+    background-color: #111;
+    background-image: linear-gradient(to bottom, #1a1a1a, #0a0a0a);
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.footer-column h4 {
+    color: #ff1e26;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(255, 30, 38, 0.3);
+}
+
+.footer-column h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    background-color: #ff1e26;
+    box-shadow: 0 0 5px rgba(255, 30, 38, 0.5);
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+    display: inline-block;
+}
+
+.footer-column ul li a:hover {
+    color: #ff3b4a;
+    transform: translateX(3px);
+}
+
+/* Social Media Section */
+.footer-social {
+    min-width: 220px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: 1px solid #333;
+}
+
+.social-icon.facebook:hover { background-color: #3b5998; transform: scale(1.1); }
+.social-icon.twitter:hover { background-color: #1da1f2; transform: scale(1.1); }
+.social-icon.instagram:hover { 
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    transform: scale(1.1);
+}
+.social-icon.youtube:hover { background-color: #ff0000; transform: scale(1.1); }
+.social-icon.tiktok:hover { 
+    background: linear-gradient(45deg, #25F4EE, #000000, #FE2C55);
+    transform: scale(1.1);
+}
+
+.download-app {
+    margin-top: 20px;
+}
+
+.download-app p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.app-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: #2a2a2a;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: all 0.3s;
+    border: 1px solid #444;
+}
+
+.app-button i {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.app-button:hover {
+    background-color: #ff1e26;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 30, 38, 0.3);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #080808;
+    padding: 20px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #222;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #ff3b4a;
+}
+
+.footer-language select {
+    background-color: #1a1a1a;
+    color: #eee;
+    border: 1px solid #444;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.footer-language select:hover {
+    border-color: #ff1e26;
+}
+
+@media (max-width: 992px) {
+    .footer-main {
+        padding: 40px 5%;
+    }
+    .footer-bottom {
+        padding: 20px 5%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-column {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-column {
+        flex: 0 0 100%;
+    }
+    .ad-content h3 {
+        font-size: 20px;
+    }
+    .ad-content p {
+        font-size: 14px;
+    }
+    .footer-ad-banner {
+        height: 140px;
+    }
+}
